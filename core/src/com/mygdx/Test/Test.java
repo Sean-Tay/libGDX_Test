@@ -13,17 +13,17 @@ public class Test extends ApplicationAdapter {
 	Texture img;
 	BitmapFont font;
 	
-	//Constants
-	static final String HELLO_WORLD = "Hello World!";
+	//Hello World Msg
+	final String HELLO_WORLD = "Hello World!";
 	
 	//Window is 640*480
-    static final int boundary_x = 640;
-    static final int boundary_y = 480;
-    static final int boundary_025x = 120;
-    static final int boundary_075x = 360; //From 120 to 360
-    static final int boundary_025y = 160;
-    static final int boundary_075y = 480; //From 160 to 480
-
+    final float boundary_x = 640;
+    final float boundary_y = 480;
+    final float boundary_025x = (float) (0.25*boundary_x);
+    final float boundary_075x = (float) (0.75*boundary_x); //From 160 to 480
+    final float boundary_025y = (float) (0.25*boundary_y);
+    final float boundary_075y = (float) (0.75*boundary_y); //From 120 to 360 
+    
 	@Override
 	public void create () {
 	    
@@ -32,7 +32,6 @@ public class Test extends ApplicationAdapter {
 		
 		font = new BitmapFont();
 		font.setColor(Color.RED);
-		
 	}
 
 	@Override
